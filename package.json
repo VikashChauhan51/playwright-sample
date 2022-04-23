@@ -3,21 +3,28 @@
   "version": "1.0.0",
   "description": "Playwright automation framework skeleton with Typescript.",
   "scripts": {
-    "test":"playwright test",
-    "run":"playwright test --headed",
-    "debug":"playwright test --debug",
-    "report":"playwright test --reporter=dot",
-    "test:firefox":"playwright test --project=firefox",
-    "test:chromium":"playwright test --project=chromium",
-    "test:safari":"playwright test --project=webkit",
-    "run:firefox":"playwright test --headed --project=firefox",
-    "run:chromium":"playwright test --headed --project=chromium",
-    "run:safari":"playwright test --headed --project=webkit"
+    "test": "playwright test",
+    "run": "playwright test --headed",
+    "debug": "playwright test --debug",
+    "report": "playwright test --reporter=dot",
+    "test:firefox": "playwright test --project=firefox",
+    "test:chromium": "playwright test --project=chromium",
+    "test:safari": "playwright test --project=webkit",
+    "run:firefox": "playwright test --headed --project=firefox",
+    "run:chromium": "playwright test --headed --project=chromium",
+    "run:safari": "playwright test --headed --project=webkit"
   },
-  "keywords": ["playwright","test","automation","typescript","framework"],
+  "keywords": [
+    "playwright",
+    "test",
+    "automation",
+    "typescript",
+    "framework"
+  ],
   "author": "Vikash Chauhan",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.21.1"
+    "@playwright/test": "^1.21.1",
+    "winston": "^3.7.2"
   }
 }

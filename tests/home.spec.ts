@@ -1,4 +1,4 @@
-import { test, Page } from '@playwright/test';
+import { test } from '@playwright/test';
 import { HomePage } from '../pages/home-page';
 
 test.describe('Google home page tests', () => {
