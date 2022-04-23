@@ -15,7 +15,7 @@ export class HomePage {
     }
 
     async verifyTitle() {
-        var title=await this.page.title();
+        const title=await this.page.title();
          expect(title).toBe('Google');
 
     }
