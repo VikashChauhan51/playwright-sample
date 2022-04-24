@@ -5,12 +5,14 @@ Playwright automation framework skeleton with Typescript.
 PLAYWRIGHT-SAMPLE
 ├───.github
 │   └───workflows
+├───logs
 ├───node_modules
 ├───pages
 ├───playwright-report
 ├───test-results
 ├───tests
-└───tests-out
+├───tests-out
+└───utils
 ```
 
 ## Local Setup:
