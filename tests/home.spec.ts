@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { HomePage } from '../pages/home-page';
+import { HomePage } from '@pages/home-page';
 
 test.describe('Google home page tests', () => {
 

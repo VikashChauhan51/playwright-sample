@@ -1,5 +1,5 @@
 import { expect, Locator, Page } from '@playwright/test';
-import { PageBase } from './page-base';
+import { PageBase } from '@pages/page-base';
 export class HomePage extends PageBase {
 
     readonly searchInput: Locator;
