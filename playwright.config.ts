@@ -1,5 +1,6 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
+import { logger } from "@utils/logger";
 
 /**
  * Read environment variables from file.
@@ -41,6 +42,19 @@ const config: PlaywrightTestConfig = {
     locale:'en-IN',
     screenshot: 'only-on-failure',
     video: 'on-first-retry',
+    launchOptions: {
+      logger: {
+        isEnabled: () => true,
+        log: (name, severity, message, args) => {
+          switch (severity) {
+            case 'info': { logger.info(message); break; }
+            case 'error': { logger.error(message); break; }
+            case 'warning': { logger.warn(message); break; }
+            default: { logger.verbose(message); break; }
+          }
+        }
+      }
+    }
   },
 
   /* Configure projects for major browsers */
