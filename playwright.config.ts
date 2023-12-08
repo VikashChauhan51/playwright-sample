@@ -42,6 +42,7 @@ const config: PlaywrightTestConfig = {
     locale:'en-IN',
     screenshot: 'only-on-failure',
     video: 'on-first-retry',
+    headless: false,
     launchOptions: {
       logger: {
         isEnabled: () => true,
